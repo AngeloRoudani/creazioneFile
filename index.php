@@ -9,7 +9,9 @@ if(isset($_POST['newName'])) {
     $fileNuovo = $_POST['newName'];
 }
 
-$folder = './newFiles';
+ini_set("allow_url_fopen", true);
+
+$folder = fopen('C:\Users\anger\Desktop', 'r+');
 
 if (($newText && $fileNuovo) != "") {
 
