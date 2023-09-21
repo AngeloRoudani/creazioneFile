@@ -14,7 +14,7 @@ $folder = './newFiles';
 if (($newText && $fileNuovo) != "") {
 
     $newCreate = file_put_contents($fileNuovo,$newText );
-    file_put_contents($folder,$newText );
+    file_put_contents($folder,$newCreate, FILE_APPEND );
 }
 
 ?>
